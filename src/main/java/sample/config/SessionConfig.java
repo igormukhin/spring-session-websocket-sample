@@ -16,10 +16,9 @@ import javax.servlet.ServletContext;
 @Configuration
 public class SessionConfig {
 
-    private Integer maxInactiveIntervalInSeconds = 1800;
+    private Integer maxInactiveIntervalInSeconds = 60;
 
     @Bean
-    @Profile("!persistent")
     public MapSessionRepository mapSessionRepository() {
         MapSessionRepository sessionRepository = new MapSessionRepository();
         sessionRepository.setDefaultMaxInactiveInterval(maxInactiveIntervalInSeconds);
