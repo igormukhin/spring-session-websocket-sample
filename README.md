@@ -7,7 +7,7 @@ Original location inside the Spring Session repository is `/samples/websocket`.
 ### Differences
 
 * Stand-alone Maven project
-* Dependency to Redis is replaces with a simple Map as storage for session data
+* Dependency to Redis is replaced with a simple Map as storage for session data
 * Actuator is included to show that you may need to change its `/info` endpoint.
 
 ### Usage
